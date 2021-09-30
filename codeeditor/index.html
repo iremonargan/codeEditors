@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>CodeEditor</title>
+</head>
+
+<body>
+  <div class="editor m-5">
+    <div class="editor-event d-flex justify-content-end">
+      <select id="history" name="pets" class="editor-event__history me-3 px-2 py-1">
+        <option selected value="">HISTORY</option>
+      </select>
+      <div id="history-opt" class="editor-event__btn">
+      </div>
+      <a id="save" class="editor-event__save px-2 py-1">SAVE</a>
+    </div>
+    <div id="editor-output" class="editor-output">
+      <iframe id="editor-window"></iframe>
+    </div>
+    <div class="editor-top d-flex justify-content-end">
+      <span id="minimize" class="editor-top__minimize pe-2">Minimize</span>
+      <span id="run" class="editor-top__run px-2">Run</span>
+    </div>
+    <div class="editor-code d-flex">
+      <textarea class="editor-code__area" id="htmlCode" placeholder="HTML"></textarea>
+      <textarea class="editor-code__area" id="cssCode" placeholder="CSS"></textarea>
+      <textarea class="editor-code__area" id="jsCode" placeholder="JS"></textarea>
+    </div>
+  </div>
+  <div id="editor-modal" class="editor-modal">
+    <div class="editor-modal__main">
+      <h5 class="text-center p-3">Save Your Code</h2>
+        <label class="m-4 p-3" for="codename">Code name:</label>
+        <input type="text" id="codename" name="codename">
+        <div class="editor-modal__button">
+          <button id="saveAll" class="editor-modal__button-save ">SAVE</button>
+          <button id="cancel" class="editor-modal__button-cancel">CANCEL</button>
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+</html>
