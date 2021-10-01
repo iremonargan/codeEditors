@@ -46,7 +46,7 @@
 }
 
 .editor .animation-small {
-  height: 50px;
+  height: 50px !important;
 }
 
 .editor-code__area {
@@ -109,5 +109,9 @@
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.mystyle {
+  background-color: coral;
 }
 /*# sourceMappingURL=main.css.map */

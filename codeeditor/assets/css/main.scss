@@ -39,7 +39,7 @@
     height: 500px;
   }
   .animation-small {
-    height: 50px;
+    height: 50px!important;
   }
   &-code {
     &__area {
@@ -95,4 +95,8 @@
       height: 100%;
     }
   }
+}
+.mystyle {
+  background-color: coral;
+
 }
